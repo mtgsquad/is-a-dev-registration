@@ -11,13 +11,13 @@ import { GithubAuthProvider, OAuthCredential } from 'firebase/auth';
 import config from './config.json';
 import vars from './vars'
 firebase.initializeApp({
-  apiKey: config.key,
-  authDomain: "is-a-dev.firebaseapp.com",
-  projectId: "is-a-dev",
-  storageBucket: "is-a-dev.appspot.com",
-  messagingSenderId: "611825040570",
-  appId: "1:611825040570:web:98f70d5aaf5861552e1683",
-  measurementId: "G-K9WXR60DWJ"
+  apiKey: "AIzaSyANhO3IRrH41j-IO-7v9tS2ussFaCgDT8k",
+  authDomain: "owl-beta.andrewstech.me",
+  projectId: "register-is-a-dev",
+  storageBucket: "register-is-a-dev.appspot.com",
+  messagingSenderId: "434618976400",
+  appId: "1:434618976400:web:a0ee5330e20dc77e15f015",
+  measurementId: "G-ZQ6B6DSS7M"
 });
 const auth = firebase.auth();
 const githubLoginProvider = new firebase.auth.GithubAuthProvider();
