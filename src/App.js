@@ -94,15 +94,15 @@ function Dashboard(props) {
             <div className="dropdown-content">
               <button type='button' onClick={(event) => {
                 event.preventDefault();
-                document.getElementById('dropbtn').innerText = 'CNAME';
-                
-              }} className='dropdown-buttons'>CNAME</button>
-
-              <button type='button' onClick={(event) => {
-                event.preventDefault();
                 document.getElementById('dropbtn').innerText = 'A';
                 
               }} className='dropdown-buttons'>A</button>
+
+              <button type='button' onClick={(event) => {
+                event.preventDefault();
+                document.getElementById('dropbtn').innerText = 'CNAME';
+                
+              }} className='dropdown-buttons'>CNAME</button>
 
               <button type='button' onClick={(event) => {
                 event.preventDefault();
