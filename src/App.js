@@ -146,12 +146,14 @@ function Dashboard(props) {
           onClick={() => {
             const subdomain = document.getElementById("subdomain").value;
             const recordType = document.getElementById("dropbtn").value;
-            let recordData = document.getElementById("value").value;
 
+            let recordData = document.getElementById("value").value;
             if (recordType === "A" || recordType === "MX") {
-              recordData = JSON.stringify(recordData.split(","));
+              recordData = JSON.stringify(
+                recordData.split(",").map((s) => s.trim())
+              );
             } else {
-              recordData = `"${recordData}"`;
+              recordData = `"${recordData.trim()}"`;
             }
 
             commit(
