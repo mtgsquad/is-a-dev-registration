@@ -42,7 +42,7 @@ function App() {
       <main>{user ? <Dashboard /> : <SignIn />}</main>
 
       <footer>
-        <h3>&copy; is-a.dev</h3>
+        <h3>&copy; is-a.dev  TEST</h3>
       </footer>
     </>
   );
