@@ -34,7 +34,7 @@ const auth = firebase.auth();
 const githubLoginProvider = new firebase.auth.GithubAuthProvider();
 // auth.signInWithPopup(provider);
 
-onst appCheck = initializeAppCheck(app, {
+const appCheck = initializeAppCheck(app, {
   provider: new ReCaptchaV3Provider('6LcuW0AhAAAAALp8XjrdYX0p1Kz8hXbMg5e0GIzg'),
 
   // Optional argument. If true, the SDK automatically refreshes App Check
