@@ -46,7 +46,6 @@ function App() {
       <main>{user ? <Dashboard /> : <SignIn />}</main>
 
       <footer>
-        <h3>&copy; is-a.dev</h3>
         <div className="donate">
           <p>Consider donating here:</p>
           <div className="donate-links">
