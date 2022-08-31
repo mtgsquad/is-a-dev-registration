@@ -26,18 +26,10 @@ firebase.initializeApp({
   appId: "1:611825040570:web:98f70d5aaf5861552e1683",
   measurementId: "G-K9WXR60DWJ",
 })
-const appCheck = firebase.appCheck();
 const auth = firebase.auth();
 const githubLoginProvider = new firebase.auth.GithubAuthProvider();
 // auth.signInWithPopup(provider);
 const db = getFirestore();
-
-appCheck.activate(
-  '6LcuW0AhAAAAALp8XjrdYX0p1Kz8hXbMg5e0GIzg',
-
-  // Optional argument. If true, the SDK automatically refreshes App Check
-  // tokens as needed.
-  true);
 
 let registerPopup = false;
 
